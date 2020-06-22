@@ -35,5 +35,11 @@ namespace AdoNetDemo1
             var module1 = new ErrorHandlingModule();
             module1.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var module1 = new Module6Form();
+            module1.Show();
+        }
     }
 }
