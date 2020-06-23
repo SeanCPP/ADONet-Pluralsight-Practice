@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DisconnectedClasses\ItemViewData.cs" />
     <Compile Include="DisconnectedClasses\Module6DataAccess.cs" />
     <Compile Include="ErrorHandlingModule.cs">
       <SubType>Form</SubType>

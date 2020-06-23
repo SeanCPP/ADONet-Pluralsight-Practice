@@ -21,8 +21,38 @@ namespace AdoNetDemo1
         private void button1_Click(object sender, EventArgs e)
         {
             var db = new Module6DataAccess();
-            db.GetBooksAsDataTable();
+            var dt = db.GetBooksAsDataTable();
             textBox1.Text = db.ResultText;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+
+            var viewdata = new ItemViewData();
+            var dv = viewdata.GetBooksSortedByAuthorDescending();
+            foreach(DataRowView rowView in dv)
+            {
+                foreach(DataColumn column in dv.Table.Columns)
+                {
+                    textBox1.Text += $"  {column.ColumnName}: {rowView[column.ColumnName]}  ";
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+
+            var viewdata = new ItemViewData();
+            var dv = viewdata.GetTransactionViewsLessThan(46.0m);
+            foreach (DataRowView rowView in dv)
+            {
+                foreach (DataColumn column in dv.Table.Columns)
+                {
+                    textBox1.Text += $"  {column.ColumnName}: {rowView[column.ColumnName]}  ";
+                }
+            }
         }
     }
 }
