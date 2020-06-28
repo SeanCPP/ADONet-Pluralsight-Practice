@@ -68,7 +68,7 @@ namespace AdoNetDemo1.DisconnectedClasses
             SqlDo(sql, (cnn, cmd) => 
             {
                 cmd.Parameters.Add(new SqlParameter("@Name", name));
-                using (var adapter = new SqlDataAdapter())
+                using (var adapter = new SqlDataAdapter(cmd))
                 {
                     dt = new DataTable();
                     adapter.Fill(dt);
