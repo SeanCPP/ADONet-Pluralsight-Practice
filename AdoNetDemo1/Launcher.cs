@@ -47,5 +47,11 @@ namespace AdoNetDemo1
             var module7 = new Module7Form();
             module7.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var module8 = new Module8Form();
+            module8.Show();
+        }
     }
 }

@@ -36,6 +36,7 @@ namespace AdoNetDemo1
                 foreach(DataColumn column in dv.Table.Columns)
                 {
                     textBox1.Text += $"  {column.ColumnName}: {rowView[column.ColumnName]}  ";
+                    textBox1.Text += Environment.NewLine;
                 }
             }
         }

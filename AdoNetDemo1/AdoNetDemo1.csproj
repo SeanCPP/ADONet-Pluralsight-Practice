@@ -110,6 +110,14 @@
       <DependentUpon>Module7Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Module7\Module7DataAccess.cs" />
+    <Compile Include="Module8Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module8Form.Designer.cs">
+      <DependentUpon>Module8Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module8\CommandBuilderStuff.cs" />
+    <Compile Include="Module8\ConnectionStringStuff.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ErrorHandlingModule.resx">
@@ -129,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Module7Form.resx">
       <DependentUpon>Module7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module8Form.resx">
+      <DependentUpon>Module8Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
