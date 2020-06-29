@@ -73,6 +73,10 @@ namespace AdoNetDemo1.Module9
             {
                 cmd.Connection = CreateConnection();
             }
+            if (string.IsNullOrEmpty(cmd.CommandText))
+            {
+                cmd.CommandText = SQL;
+            }
         }
         public virtual IDbConnection CreateConnection()
         {
