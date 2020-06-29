@@ -26,7 +26,7 @@ namespace AdoNetDemo1.Module9
         public string ConnectionStringName { get; private set; }
         public string SQL { get; protected set; }
         public object IdentityGenerated { get; protected set; }
-        public string ParameterToken { get; private set; }
+        public string ParameterToken { get; protected set; }
         public List<ValidationResponse> ValidationResponses { get; set; } = new List<ValidationResponse>();
         public bool IsInTransaction { get; protected set; }
         #endregion
