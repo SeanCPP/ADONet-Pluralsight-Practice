@@ -49,6 +49,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -118,6 +120,15 @@
     </Compile>
     <Compile Include="Module8\CommandBuilderStuff.cs" />
     <Compile Include="Module8\ConnectionStringStuff.cs" />
+    <Compile Include="Module9Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module9Form.Designer.cs">
+      <DependentUpon>Module9Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module9\ColumnMapper.cs" />
+    <Compile Include="Module9\DataAccessBase.cs" />
+    <Compile Include="Module9\ValidationResponse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ErrorHandlingModule.resx">
